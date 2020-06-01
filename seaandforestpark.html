@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>海と森自然公園</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/seaandforestpark.css">
+    <meta name="viewport" content="wclassth=device=wclassth, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/960d34d249.js" crossorigin="anonymous"></script>    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'qbb8hvs',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+</head>
+<body>
+<!-- ヘッダー（PC、タブレット用） -->    
+    <div class="header container d-sm-block d-none mt-3">
+        <div class="header-logo float-left">
+            <a href="#"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div class="header-list float-left">
+            <ul class="list-unstyled text-center">
+                <li class="px-5 pt-5 pb-0 float-left"><a href="#">海水浴</a></li>
+                <li class="px-5 pt-5 pb-0 float-left"><a href="#">森林浴</a></li>
+                <li class="px-5 pt-5 pb-0 float-left"><a href="#">イベント</a></li>
+                <li class="px-5 pt-5 pb-0 float-left"><a href="#">ホテル</a></li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+<!-- スマホ用ヘッダー -->    
+<nav class="navbar navbar-expand-lg d-sm-none d-block">
+    <a class="navbar-brand" href="#">海と森自然公園</a>
+    <button class="navbar-toggler float-right custom-hamburger pr-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-start" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">海水浴</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">森林浴</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">イベント</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">ホテル</a>
+          </li>
+      </ul>
+    </div>
+</nav>
+
+<!-- トップ画、カレンダー -->    
+    <div class="main container-fluid pb-5">
+        <div class="container top-wrapper">
+            <div class="row">
+                <div class="col-12 col-md-9 p-0">
+                    <img class="img-fluid" src="img/top-img.jpg" alt="">   
+                </div>
+                <div class="calendar col-12 col-md-3 float-left d-flex flex-column justify-content-center">
+                    <h5 class="text-center mt-3 m-md-0">イベントカレンダー</h5>
+                    <h2 class="calendar-title"><a href="#"><i class="fas fa-chevron-left"></i></a><span id="js-year"></span>年<span id="js-month"></span>月<a href="#"><i class="fas fa-chevron-right"></i></a></h2>
+                    <table class="calendar-table">
+                        <thead class="text-center">
+                            <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+                        </thead>
+                        <tbody id="js-calendar-body"></tbody>
+                    </table>
+                    <a class="event-btn my-3 mb-md-0 d-flex align-items-center justify-content-center" href="#">イベント一覧を見る <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+<!-- メインコンテンツ -->    
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-3 p-0 scale-box">
+                    <a href="#"><img class="img-fluid scale-img" src="img/sea.jpg" alt=""></a>
+                </div>
+                <div class="col-8 col-md-3 p-0 d-flex flex-column justify-content-center sea-sentence">
+                    <h1 class="text-left d-sm-block d-none">海</h1>
+                    <p>公園の海では様々な生き物に出会えたり、シーカヤックが出来たりします。</p>
+                </div>
+                <div class="col-4 col-md-3 p-0 scale-box">
+                    <a href="#"><img class="img-fluid scale-img" src="img/forest.jpg" alt=""></a>
+                </div>
+                <div class="col-8 col-md-3 p-0 d-flex flex-column justify-content-center forest-sentence">
+                    <h1 class="text-left d-sm-block d-none">森</h1>
+                    <p>公園内ではキャンプやハイキング、バードウォッチングを一年中お楽しみ頂けます。</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 col-md-3 p-0 order-md-2 scale-box">
+                    <a href="#"><img class="img-fluid scale-img" src="img/event.jpg" alt=""></a>
+                </div>
+                <div class="col-8 col-md-3 p-0 order-md-1 d-flex flex-column justify-content-center sakura-sentence">
+                    <h1 class="text-left text-md-right d-sm-block d-none">催</h1>
+                    <p>春はお花見、夏はキャンプファイヤーなど、家族皆で楽しめるイベントを随時開催！</p>
+                </div>
+                <div class="col-4 col-md-3 p-0 order-md-4 scale-box">
+                    <a href="#"><img class="img-fluid scale-img" src="img/hotel.jpg" alt=""></a>
+                </div> 
+                <div class="col-8 col-md-3 p-0 order-md-3 d-flex flex-column justify-content-center hotel-sentence">
+                    <h1 class="text-left text-md-right d-sm-block d-none">宿</h1>
+                    <p>一日中遊んだら、すぐ隣のリゾートホテルで疲れを癒しましょう。</p>
+                </div>   
+                
+            </div>
+            <div class="row">
+                <div class="col-4 col-md-3 p-0 scale-box">
+                    <a href="#"><img class="img-fluid scale-img" src="img/weather-icon.jpg" alt=""></a>
+                </div>
+                <div class="col-8 col-md-3 d-flex align-items-center weather-background pl-0">
+                    <h3 class="text-left">今日の天気</h3>
+                </div>
+                <div class="col-4 col-md-3 p-0 scale-box">
+                    <a href="#"><img class="img-fluid scale-img" src="img/map.jpg" alt=""></a>
+                </div>
+                <div class="col-8 col-md-3 d-flex align-items-center access-background pl-0">
+                    <h3 class="text-left">アクセス</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- パソコン、タブレット用フッター -->       
+    <div class="footer d-sm-block d-none">
+        <div class="container p-0">
+            <h3 class="text-center float-left ml-0 my-3 mr-3"><a href="#">海と森自然公園</a></h3>
+            <ul class="list-unstyled text-center p-0 m-0 float-left">
+                <li class="float-left ml-0 m-3"><a href="#">海水浴</a></li>
+                <li class="float-left ml-0 m-3"><a href="#">森林浴</a></li>
+                <li class="float-left ml-0 m-3"><a href="#">イベント</a></li>
+                <li class="float-left ml-0 m-3"><a href="#">ホテル</a></li>
+            </ul>
+            <div class="clearfix"></div>
+            <p class="mb-0 pt-5 text-center">Copyright&copy;Tokiko Aoyama. All Rights Reserved.</p>
+        </div>
+    </div>
+
+ <!-- スマホ用フッター -->       
+    <div class="footer-sm d-sm-none d-block">
+        <h4 class="text-center"><a href="#">海と森自然公園</a></h4>
+        <ul class="list-unstyled text-center p-0 m-0">
+            <li><a href="#">海水浴</a></li>
+            <li><a href="#">森林浴</a></li>
+            <li><a href="#">イベント</a></li>
+            <li><a href="#">ホテル</a></li>
+        </ul>
+        <p class="m-0 pb-1 text-center">Copyright&copy;Tokiko Aoyama. All Rights Reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script>
+var $window = $(window);
+var $year = $('#js-year');
+var $month = $('#js-month');
+var $tbody = $('#js-calendar-body');
+var today = new Date();
+var currentYear = today.getFullYear(),
+    currentMonth = today.getMonth();
+
+$window.on('load',function(){
+  calendarHeading(currentYear, currentMonth);
+  calendarBody(currentYear, currentMonth, today);
+});
+
+function calendarBody(year, month, today){
+    var todayYMFlag = today.getFullYear() === year && today.getMonth() === month ? true : false; // 本日の年と月が表示されるカレンダーと同じか判定
+    var startDate = new Date(year, month, 1); // その月の最初の日の情報
+    var endDate  = new Date(year, month + 1 , 0); // その月の最後の日の情報
+    var startDay = startDate.getDay();// その月の最初の日の曜日を取得
+    var endDay = endDate.getDate();// その月の最後の日の曜日を取得
+    var textSkip = true; // 日にちを埋める用のフラグ
+    var textDate = 1; // 日付(これがカウントアップされます)
+    var tableBody =''; // テーブルのHTMLを格納する変数
+  
+    for (var row = 0; row < 6; row++){
+        var tr = '<tr>';
+    
+    for (var col = 0; col < 7; col++) {
+      if (row === 0 && startDay === col){
+        textSkip = false;
+      }
+      if (textDate > endDay) {
+        textSkip = true;
+      }
+      var addClass = todayYMFlag && textDate === today.getDate() ? 'is-today' : '';
+      var textTd = textSkip ? ' ' : textDate++;
+      var td = '<td class="'+addClass+'">'+textTd+'</td>';
+      tr += td;
+    }
+    tr += '</tr>';
+    tableBody += tr;
+  }
+  $tbody.html(tableBody);
+}
+
+function calendarHeading(year, month){
+  $year.text(year);
+  $month.text(month + 1);
+}
+</script>
+</body>
+</html>

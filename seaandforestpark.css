@@ -1,0 +1,148 @@
+* {
+    font-family: kan412typos-std,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+
+.header a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header {
+    background-color: #ffffff;
+}
+
+.header a, .header a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #4D80A6;
+}
+
+.navbar a:hover, .footer a:hover, .footer-sm a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.custom-hamburger .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar a {
+    color: white;
+}
+
+.main {
+    background-color: #eeeddd;
+}
+
+.calendar {
+    background-image: url(../img/calendar.jpg);   
+    background-size: cover;
+}
+
+.calendar-title {
+    text-align: center;
+}
+  
+.calendar-table {
+    margin: 0 auto;
+}
+    
+.is-today {
+    color: red;
+    border: #ffffff solid 1px;
+}
+    
+th, td {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px #ffffff;
+}
+
+.event-btn {
+      display: block;
+      background-color: #F5BF24;
+      height: 40px;
+      color: #ffffff;
+}
+
+.event-btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media(min-width: 970px ){
+    .event-btn {
+        width: 246px;
+        margin: 0 auto;
+    }
+}
+
+h1 {
+    font-size: 60px !important;
+}
+
+.scale-img {
+    max-width: 285px; /*画像の幅*/
+    max-height: 285px; /*画像の高さ*/
+    transition-duration: 0.5s; /*変化の時間*/
+}
+.scale-img:hover {
+    transform: scale(1.2,1.2); /*画像の拡大*/
+    cursor: pointer; /*カーソルをポインターにする*/
+}
+.scale-box {
+    max-width: 285px; /*ボックスの幅*/
+    max-height: 285px; /*ボックスの高さ*/
+    overflow: hidden; /*画像拡大時にはみ出た部分を隠す*/
+}
+
+.sea-sentence {
+      background-image: url(../img/sea-background.jpg);
+      background-size: cover;
+  }
+
+.forest-sentence {
+    background-image: url(../img/forest-background.jpg);
+    background-size: cover;
+}
+
+.sakura-sentence {
+    background-image: url(../img/sakura-background.jpg);
+    background-size: cover;
+}
+
+.hotel-sentence {
+    background-image: url(../img/hotel-background.jpg);
+    background-size: cover;
+}
+
+.weather-background {
+    background-image: url(../img/weather.jpg);
+    background-size: cover;  
+}
+
+.access-background {
+    background-image: url(../img/access.jpg);
+    background-size: cover; 
+}
+
+.footer, .footer-sm {
+    display: block;
+    background-color: #4D80A6;
+    min-height: 130px;
+}
+
+.footer a, .footer-sm a {
+    color: white;
+}
+
+.footer p, .footer-sm p {
+    font-size: xx-small;
+}
